@@ -87,3 +87,22 @@ go run main.go
 ```
 
 </details>
+
+<details>
+  <summary>API</summary>
+  
+  Acesse a pasta da API:
+
+```
+cd ~/code-delivery/nest-api
+```
+
+Em seguida, suba o container docker com o comando:
+
+```
+docker-compose up
+```
+
+Caso necessário altere as configurações no arquivo **.env**.
+
+</details>
