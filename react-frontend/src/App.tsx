@@ -1,6 +1,8 @@
 import { CssBaseline, ThemeProvider } from '@mui/material';
 import { SnackbarProvider } from 'notistack';
 
+import { Mapping } from './components/Mapping';
+
 import theme from './theme';
 
 function App() {
@@ -8,7 +10,8 @@ function App() {
 		<ThemeProvider theme={theme}>
 			<SnackbarProvider maxSnack={3}>
 				<CssBaseline />
-				<h2>Code Delivery</h2>
+
+				<Mapping />
 			</SnackbarProvider>
 		</ThemeProvider>
 	);
