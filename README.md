@@ -15,9 +15,20 @@
 
 A Imersão Full Stack && Full Cycle é um evento online e 100% gratuito que vai ajudar na prática programadores a desenvolverem as principais habilidades exigidas pelas empresas no mercado para que eles sejam capazes de trabalhar em projetos de grande porte com total confiança e desenvolvendo do jeito certo.
 
-### 👨‍💻 O que será desenvolvido
+### 👨‍💻 O projeto
 
-Durante esta edição, será desenvolvido um sistema de entregas, o qual permitirá visualizar em tempo real o veículo do entregador, bem como visualizar diversos entregadores simultâneos. Para possibilitar a dinâmica das entregas um sistema de simulação também será desenvolvido. Os dados de cada entrega e as posições, serão armazenadas no Elasticsearch para futuras análises.
+Durante esta edição, foi desenvolvido um sistema de entregas, o qual permite visualizar em tempo real o veículo do entregador, bem como visualizar diversos entregadores simultâneos. Para possibilitar a dinâmica das entregas um sistema de simulação também foi desenvolvido. Os dados de cada entrega e as posições, serão armazenadas no Elasticsearch para futuras análises.
+
+---
+
+| **Tela inicial**                                                                                                                                                                                                                                           | **1 entrega**                                                                                                                                                                                                                                              | **2 entregas simultâneas**                                                                                                                                                                                                                                 |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <img src="https://user-images.githubusercontent.com/25274156/175362746-8a05adf3-8d42-4a74-b3ed-b01e3be12756.png" data-canonical-src="https://user-images.githubusercontent.com/25274156/175362746-8a05adf3-8d42-4a74-b3ed-b01e3be12756.png" width="300" /> | <img src="https://user-images.githubusercontent.com/25274156/175365791-7b0a36d7-e07d-4467-8eb4-5f00356eac50.png" data-canonical-src="https://user-images.githubusercontent.com/25274156/175365791-7b0a36d7-e07d-4467-8eb4-5f00356eac50.png" width="300" /> | <img src="https://user-images.githubusercontent.com/25274156/175362751-ecdd6ec3-728d-4978-9f7c-04dc839a4093.png" data-canonical-src="https://user-images.githubusercontent.com/25274156/175362751-ecdd6ec3-728d-4978-9f7c-04dc839a4093.png" width="300" /> |
+|                                                                                                                                                                                                                                                            |                                                                                                                                                                                                                                                            |                                                                                                                                                                                                                                                            |
+| **3 entregas simultâneas**                                                                                                                                                                                                                                 | **Entrega efetuada**                                                                                                                                                                                                                                       | **Bloqueio ao iniciar entrega em andamento**                                                                                                                                                                                                               |
+| <img src="https://user-images.githubusercontent.com/25274156/175362760-3c8f8bbb-685a-43c2-8813-dd07085bf5aa.png" data-canonical-src="https://user-images.githubusercontent.com/25274156/175362760-3c8f8bbb-685a-43c2-8813-dd07085bf5aa.png" width="300" /> | <img src="https://user-images.githubusercontent.com/25274156/175362758-21880a5f-8c49-4757-8a44-a03b87e60200.png" data-canonical-src="https://user-images.githubusercontent.com/25274156/175362758-21880a5f-8c49-4757-8a44-a03b87e60200.png" width="300" /> | <img src="https://user-images.githubusercontent.com/25274156/175362756-97224c18-ad56-4877-ab5f-4e397f0dabd6.png" data-canonical-src="https://user-images.githubusercontent.com/25274156/175362756-97224c18-ad56-4877-ab5f-4e397f0dabd6.png" width="300" /> |
+
+---
 
 ## ✔️ Pré-requisitos <a name = "pre_requisitos"></a>
 
@@ -104,5 +115,38 @@ docker-compose up
 ```
 
 Caso necessário altere as configurações no arquivo **.env**.
+
+</details>
+
+<details>
+  <summary>Aplicação</summary>
+  
+  Acesse a pasta da aplicação:
+
+```
+cd ~/code-delivery/react-frontend
+```
+
+Abra o arquivo **.env** com seu editor favorito.<br />
+**REACT_APP_API_URL** informe o endereço da API.<br />
+**REACT_APP_GOOGLE_API_KEY** informe a chave da API gerada no [Google Cloud](https://console.cloud.google.com/apis/credentials).
+
+Em seguida, suba o container docker com o comando:
+
+```
+docker-compose up
+```
+
+Se preferir pode utilizar o NPM ou YARN para subir sua aplicação também.
+
+```
+npm run start
+```
+
+ou
+
+```
+yarn start
+```
 
 </details>
